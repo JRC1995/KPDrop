@@ -1,6 +1,10 @@
 # Keyphrase Dropout
-This is code for XYZ2500 paper: KPDROP: Improving Absent Keyphrase Generation.
+Official code for the paper: KPDROP: Improving Absent Keyphrase Generation (EMNLP Findings 2022)
+(link to paper will be made available later)
 
+Generally, we find that we can improve the absent performance of any baseline model that we have tried so far (T5, One2Set, CatSeq, One2One etc.)  with KPDROP-A, or KPDROP-R+beam search without harming present performance. 
+
+Additionally, we were able to contribute to the semi-supervised settings for keyphrase generation. KPDRop allows better exploitation of synthetic data for enhanced absent performance. 
 
 ## Credits
 * ```get_mebedding.py``` and ```ranker.py``` are taken from: https://github.com/xnliang98/uke_ccrank
@@ -56,4 +60,9 @@ and replace model_type=seq2seq to model_type=seq2set when using TransformerSeq2S
 * Add the following arguments when running train.py for Beam decoding based test: ```--decode_mode=BeamLN --test```
 
 (every other arguments should be same as that for training for the corresponding model)
+
+
+## Citation information to be released later.
+
+Contact: jishnu.ray.c@gmail.com for any issues or questions. 
 
