@@ -29,6 +29,8 @@ Check environment.yml (All of them may not be required, but that's the environme
 * ```bash ranker.sh``` (use Liang et al. 2021 extractor to generate synthetic labels)  
 * ```python process_kp20k_big_unsup.py```
 
+## (I plan to release the preprocessed data soon for added convenience and better reproducibility)
+
 ## Supervised Experiments
 * (set device=[whatever gpu/cpu device you want] instead of cuda:0, if something else is needed)
 * GRU One2Many (baseline): ```python train.py --model=GRUSeq2Seq --model_type=seq2seq --times=3 --dataset=kp20k2 --device=cuda:0```
