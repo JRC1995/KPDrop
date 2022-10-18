@@ -31,7 +31,8 @@ Its expected inputs, src and trg, are list of tokens. trg should be keyphrases d
 * ```python process_kp20k_split2.py```
 * ```cd ..```
 * ```bash get_embedding.sh``` (use Liang et al. 2021 extractor to generate synthetic labels)
-* ```bash ranker.sh``` (use Liang et al. 2021 extractor to generate synthetic labels)  
+* ```bash ranker.sh``` (use Liang et al. 2021 extractor to generate synthetic labels) 
+* ```cd preprocess```
 * ```python process_kp20k_big_unsup.py```
 
 ## (I plan to release the preprocessed data soon for added convenience and better reproducibility)
