@@ -52,5 +52,8 @@ and replace model_type=seq2seq to model_type=seq2set when using TransformerSeq2S
 
 
 ## Decoding
-* Add the following arguments for Greedy decoding based test: ```--decode_mode=Greedy --test```
-* Add the following arguments for Beam decoding based test: ```--decode_mode=BeamLN --test```
+* Add the following arguments when running train.py for Greedy decoding based test: ```--decode_mode=Greedy --test``` 
+* Add the following arguments when running train.py for Beam decoding based test: ```--decode_mode=BeamLN --test```
+
+(every other arguments should be same as that for training for the corresponding model)
+
