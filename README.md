@@ -16,7 +16,7 @@ Check environment.yml (All of them may not be required, but that's the environme
 ## Relevant Keyphrase Dropout Code:
 If you just want to use Keyphrase Dropout in a different codebase you can refer to: https://github.com/JRC1995/KPDrop/blob/main/collaters/seq2seq_collater.py#L39
 
-Its expected inputs, src and trg, are list of tokens. trg should be keyphrases deliminited by ";" and end with "<eos>". (["keyphhrase1-first-word", "keyphrase1-second word", ";" "keyphrase-2", "<eos>"]) (but you can make necessary minor modifications within the code to change these requirements). The main KPDropped outputs are new_src and new_trg which are in the same format as src and trg. You can remove the construction of other return variables and create whatever format of input and output you need from new_src and new_trg as needed for your task. 
+Its expected inputs, src and trg, are list of tokens. trg should be keyphrases deliminited by ";" and end with "\<eos\>". (\["keyphhrase1-first-word", "keyphrase1-second word", ";" "keyphrase-2", "\<eos\>"\]) (but you can make necessary minor modifications within the code to change these requirements). The main KPDropped outputs are new_src and new_trg which are in the same format as src and trg. You can remove the construction of other return variables and create whatever format of input and output you need from new_src and new_trg as needed for your task. 
 
 ## Datasets
 * Download datasets from the link provided in https://github.com/kenchan0226/keyphrase-generation-rl.
