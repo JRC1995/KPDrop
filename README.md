@@ -35,7 +35,7 @@ Its expected inputs, src and trg, are list of tokens. trg should be keyphrases d
 * ```cd preprocess```
 * ```python process_kp20k_big_unsup.py```
 
-## (I plan to release the preprocessed data soon for added convenience and better reproducibility)
+## (I plan to release the preprocessed data soon for added convenience and better reproducibility; email me if I haven't and you need it)
 
 ## Supervised Experiments
 * (set device=[whatever gpu/cpu device you want] instead of cuda:0, if something else is needed)
