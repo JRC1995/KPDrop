@@ -1,6 +1,6 @@
 # Keyphrase Dropout
 Official code for the paper: KPDROP: Improving Absent Keyphrase Generation (EMNLP Findings 2022)
-(link to paper will be made available later)
+https://arxiv.org/abs/2112.01476
 
 Generally, we find that we can improve the absent performance of any baseline model that we have tried so far (T5, One2Set, CatSeq, One2One etc.)  with KPDROP-A, or KPDROP-R+beam search without harming present performance. 
 
