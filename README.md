@@ -70,7 +70,25 @@ and replace model_type=seq2seq to model_type=seq2set when using TransformerSeq2S
 (every other arguments should be same as that for training for the corresponding model)
 
 
-## Citation information to be released later.
+## Citation
+
+```
+@inproceedings{ray-chowdhury-etal-2022-kpdrop,
+    title = "{KPDROP}: Improving Absent Keyphrase Generation",
+    author = "Ray Chowdhury, Jishnu  and
+      Park, Seo Yeon  and
+      Kundu, Tuhin  and
+      Caragea, Cornelia",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2022",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-emnlp.357",
+    pages = "4853--4870",
+    abstract = "Keyphrase generation is the task of generating phrases (keyphrases) that summarize the main topics of a given document. Keyphrases can be either present or absent from the given document. While the extraction of present keyphrases has received much attention in the past, only recently a stronger focus has been placed on the generation of absent keyphrases. However, generating absent keyphrases is challenging; even the best methods show only a modest degree of success. In this paper, we propose a model-agnostic approach called keyphrase dropout (or KPDrop) to improve absent keyphrase generation. In this approach, we randomly drop present keyphrases from the document and turn them into artificial absent keyphrases during training. We test our approach extensively and show that it consistently improves the absent performance of strong baselines in both supervised and resource-constrained semi-supervised settings.",
+}
+```
 
 Contact: jishnu.ray.c@gmail.com for any issues or questions. 
 
