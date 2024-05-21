@@ -69,6 +69,8 @@ and replace model_type=seq2seq to model_type=seq2set when using TransformerSeq2S
 
 (every other arguments should be same as that for training for the corresponding model)
 
+## Evaluation
+In the evaluation, @5R represents the evaluation in the style of [Chan et al.](https://aclanthology.org/P19-1208/) and others, where they do the equivalent of adding "dummy keyphrases" if the top (here top 5) selected keyphrases are less than k (i.e., 5). Our @5R is equivalent to theirs @5 and @5C in our paper (Appendix). 
 
 ## Citation
 
