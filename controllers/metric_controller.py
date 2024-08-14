@@ -1,8 +1,3 @@
-from seqeval.metrics import f1_score as seqeval_f1_score
-from seqeval.scheme import IOB2
-from utils.conlleval import evaluate
-
-
 def compute_F1(prec, rec):
     return 2*prec*rec/(prec+rec) if (prec+rec) > 0 else 0
 
@@ -16,18 +11,6 @@ def metric_fn(items, config):
 
         composed_metric = {"loss": loss,
                            "accuracy": accuracy*100}
-
-    elif config["display_metric"] == "F1" and config["model_type"] == "seq_label":
-        loss = sum([metric["loss"] for metric in metrics]) / len(metrics) if len(metrics) > 0 else 0
-        display_items = [item["display_items"] for item in items]
-        all_predictions = []
-        all_labels = []
-        for item in display_items:
-            all_predictions += item["predictions"]
-            all_labels += item["labels"]
-
-        composed_metric = {"loss": loss,
-                           "F1": seqeval_f1_score(all_labels, all_predictions, scheme=IOB2)}
     elif config["model_type"] == "seq2seq" or config["model_type"] == "seq2set":
         composed_metric = {}
         total_data = sum([metric["total_data"] for metric in metrics])
